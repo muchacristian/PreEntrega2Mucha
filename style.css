@@ -19,8 +19,14 @@ header nav .nav-item a:hover {
     font-size: 17px;
 }
 
-/* Footer */
+/* Estilos a los iconos del footer */
+footer i{
+    font-size: 2.5rem;
+    margin: 0 20px 0 20px;
+    color: #f7f7f8;
+}
 
-footer {
-    height: 15rem;
+footer i:hover {
+    color: blue;
+    font-size: 2.8rem;
 }
