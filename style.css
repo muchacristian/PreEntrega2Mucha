@@ -1,0 +1,26 @@
+/* Estilo del Logo*/
+
+header nav img {
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+}
+
+/* Estilos al NavBar */
+
+header nav .nav-item a {
+    color: #f1f1f1;
+}
+
+header nav .nav-item a:hover {
+    color: cornflowerblue;
+    border: 1px solid rgb(82, 82, 105);
+    border-radius: 20px;
+    font-size: 17px;
+}
+
+/* Footer */
+
+footer {
+    height: 15rem;
+}
