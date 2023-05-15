@@ -1,32 +1,69 @@
+/* Color de Fondo al Body del index*/
+.body {
+  background-color: #11115a;
+  background-image: linear-gradient(
+    90deg,
+    #11115a 0%,
+    #6af2ff 55%,
+    #11115a 100%
+  );
+}
+
+/* Color de Fondo al Header */
+
+header {
+  background-color: #11115a;
+  background-image: linear-gradient(
+    90deg,
+    #11115a 0%,
+    #6af2ff 55%,
+    #11115a 100%
+  );
+}
+
 /* Estilo del Logo*/
 
 header nav img {
-    width: 75px;
-    height: 75px;
-    border-radius: 75px;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
 }
 
 /* Estilos al NavBar */
 
 header nav .nav-item a {
-    color: #f1f1f1;
+  color: black;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
 
 header nav .nav-item a:hover {
-    color: cornflowerblue;
-    border: 1px solid rgb(82, 82, 105);
-    border-radius: 20px;
-    font-size: 17px;
+  color: cornflowerblue;
+  border-top: solid 3px black;
+  border-radius: 20px;
+  font-size: 1.3rem;
 }
 
 /* Estilos a los iconos del footer */
-footer i{
-    font-size: 2.5rem;
-    margin: 0 20px 0 20px;
-    color: #f7f7f8;
+footer i {
+  font-size: 2.5rem;
+  margin: 0 20px 0 20px;
+  color: #f7f7f8;
 }
 
 footer i:hover {
-    color: blue;
-    font-size: 2.8rem;
+  color: blue;
+  font-size: 2.8rem;
+}
+
+/* Estilo al encabezado de la Tienda*/
+
+.h1-tienda {
+  display: inline-block;
+  border-top: solid 0.2rem black;
+  border-bottom: solid 0.2rem black;
+  margin: 30px;
+  font-weight: bold;
+  padding: 1rem;
 }
