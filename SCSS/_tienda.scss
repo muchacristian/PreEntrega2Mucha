@@ -1,0 +1,14 @@
+@import '_mixins.scss';
+
+.contenedor-tienda {
+  background-color: #f1f1f1;
+
+  .borde-tienda {
+    @include bordes(30px, 1rem, red, inline-block);
+    font-weight: bold;
+  }
+  .borde-secciones {
+    @include bordes(30px, 0.2rem, rgb(95, 42, 165));
+  }
+}
+

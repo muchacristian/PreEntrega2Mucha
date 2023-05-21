@@ -1,0 +1,23 @@
+@import '_extend.scss';
+
+
+header {
+    background-color: $gradient-azul;
+    background-image: $bg-grad-image;
+
+    nav {
+      img {
+        @extend %logo;
+      }
+      .nav-item a {
+        color: black;
+        margin-left: 1rem;
+        font-size: 1.3rem;
+        font-weight: bolder;
+      }
+      .nav-item a:hover {
+        border-top: solid 3px red;
+        font-size: 1.3rem;
+      }
+    }
+}

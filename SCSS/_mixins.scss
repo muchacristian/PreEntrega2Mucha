@@ -1,0 +1,7 @@
+@mixin bordes ($margin, $padding, $color-borde, $bloque){
+    display: $bloque;
+    border-top: solid 0.2rem $color-borde;
+    border-bottom: solid 0.2rem $color-borde;
+    margin: $margin;
+    padding: $padding;
+}
