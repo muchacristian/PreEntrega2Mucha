@@ -1,0 +1,11 @@
+
+
+@mixin size($ancho , $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin color-tamaño($color , $tamaño) { 
+    color: $color;
+    font-size: $tamaño;
+}

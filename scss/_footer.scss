@@ -1,0 +1,13 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+
+footer {
+    i {
+        @include color-tamaño($blanco, 2.5rem);
+        margin: 0 20px 0 20px;    
+
+        &:hover {
+            @include color-tamaño($blue, 2.8rem);
+        }
+    }
+}

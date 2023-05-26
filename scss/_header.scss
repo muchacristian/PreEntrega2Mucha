@@ -1,0 +1,23 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+
+header {
+  background-color: $color-fondo;
+  background-image: $gradiante-fondo;
+  nav {
+    img {
+        @include size(75px, 75px);
+        border-radius: 50%;
+    }
+    .nav-link {
+        @include color-tamaño($black, 1.3rem);
+        margin-left: 1rem;
+        font-weight: bolder;
+
+        &:hover {
+            @include color-tamaño($blue, 1.3rem);
+            border-top: solid 3px $black;
+        }
+    }
+  }
+}
