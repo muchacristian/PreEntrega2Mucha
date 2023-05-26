@@ -29,15 +29,42 @@ footer i:hover {
   font-size: 2.8rem;
 }
 
-.tienda {
-  margin: 30px;
-}
-.tienda .borde-tienda {
-  display: inline;
+.borde-contenedor .borde {
   border-top: solid 0.2rem black;
   border-bottom: solid 0.2rem black;
+}
+
+.borde-secciones:hover {
+  display: inline;
+  border-top: solid 0.3rem rgb(60, 60, 190);
+}
+
+.borde-contenedor {
+  margin: 30px;
+}
+.borde-contenedor .borde {
+  display: inline;
   font-weight: bold;
   padding: 1rem;
+}
+
+.borde-secciones {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.borde-contenedor .borde {
+  border-top: solid 0.2rem black;
+  border-bottom: solid 0.2rem black;
+}
+
+.borde-secciones:hover {
+  display: inline;
+  border-top: solid 0.3rem rgb(60, 60, 190);
+}
+
+.marcas-centrado {
+  display: flex;
+  align-items: center;
 }
 
 .body {

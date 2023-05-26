@@ -1,0 +1,6 @@
+@import "_mixin.scss";
+@import "_variables.scss";
+
+.marcas-centrado {
+    @include centrado(flex , center);
+}

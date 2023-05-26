@@ -1,0 +1,11 @@
+@import "_variables.scss";
+
+%borde {
+    border-top: solid 0.2rem $black;
+    border-bottom: solid 0.2rem $black;
+}
+
+%secciones {
+    display: inline;
+    border-top: solid 0.3rem $blue;
+}
