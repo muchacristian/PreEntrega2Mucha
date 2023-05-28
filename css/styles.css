@@ -70,6 +70,11 @@ footer i {
   font-size: 2.5rem;
   margin: 0 20px 0 20px;
 }
+@media (max-width: 480px) {
+  footer i {
+    font-size: 1.5rem;
+  }
+}
 footer i:hover {
   color: rgb(60, 60, 190);
   font-size: 2.8rem;
@@ -177,9 +182,33 @@ footer i:hover {
   color: rgb(212, 206, 206);
 }
 
+/* Aca estan los estilos al index */
 .body {
   background-color: #11115a;
   background-image: linear-gradient(90deg, #11115a 0%, #6af2ff 55%, #11115a 100%);
+}
+.body .container .card {
+  /* Aca esta la media query para responsive de las cards y el carrousel */
+}
+@media (max-width: 480px) {
+  .body .container .card .card-title {
+    font-size: 17px;
+  }
+}
+@media (max-width: 320px) {
+  .body .container .card .card-title {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .body .container .card .card-text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .body .container .card .card-text {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

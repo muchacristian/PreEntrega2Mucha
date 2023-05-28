@@ -8,9 +8,32 @@
 @import "_nosotros.scss";
 @import "_contacto.scss";
 
-
+/* Aca estan los estilos al index */
 .body {
   background-color: $color-fondo;
   background-image: $gradiante-fondo;
-  
-}
+
+  .container {
+
+    .card {
+     /* Aca esta la media query para responsive de las cards y el carrousel */ 
+      .card-title {
+        @media (max-width: 480px) {
+          font-size: 17px;
+        }
+        @media (max-width: 320px){
+          font-size: 12px;
+        }
+      }
+
+      .card-text {
+        @media (max-width: 480px){
+          font-size: 12px;
+        }
+        @media (max-width: 320px){
+          font-size: 10px;
+        }
+      }
+    }
+    }
+  }
