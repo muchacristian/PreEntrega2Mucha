@@ -1,0 +1,24 @@
+@import "_variables.scss";
+
+.formulario-contenedor {
+    display: grid;
+    grid-template-rows: 100px 100px 200px 200px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  .texto-contacto {
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+  }
+
+  .formulario-contacto {
+    grid-row: 2 / 7;
+    grid-column: 3 / 5;
+    border: solid 0.05rem $gris;
+    padding: 20px;
+    border-radius: 10px;
+
+    label {
+      color: $blanco;
+    }
+  }
+}
