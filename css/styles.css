@@ -113,6 +113,60 @@ footer i:hover {
   border-top: solid 0.3rem rgb(60, 60, 190);
 }
 
+@media (max-width: 1199px) {
+  .uno {
+    width: 400px;
+    height: 380px;
+  }
+  .dos {
+    width: 400px;
+    height: 320px;
+  }
+  .tres {
+    width: 400px;
+    height: 350px;
+  }
+  .cuatro {
+    width: 400px;
+    height: 420px;
+  }
+}
+@media (max-width: 991px) {
+  .uno {
+    width: 350px;
+    height: 420px;
+  }
+  .dos {
+    width: 350px;
+    height: 370px;
+  }
+  .tres {
+    width: 350px;
+    height: 410px;
+  }
+  .cuatro {
+    width: 350px;
+    height: 490px;
+  }
+}
+@media (max-width: 767px) {
+  .uno {
+    width: 250px;
+    height: 650px;
+  }
+  .dos {
+    width: 250px;
+    height: 590px;
+  }
+  .tres {
+    width: 250px;
+    height: 600px;
+  }
+  .cuatro {
+    width: 250px;
+    height: 710px;
+  }
+}
 .marcas-centrado {
   display: flex;
   align-items: center;

@@ -1,6 +1,52 @@
 @import "_mixin.scss";
 @import "_variables.scss";
 
+@media(max-width: 1199px) {
+    .uno {
+        @include size(400px , 380px);
+    }
+    .dos {
+        @include size(400px , 320px);
+    }
+    .tres {
+        @include size(400px , 350px);
+    }
+    .cuatro {
+        @include size(400px , 420px);
+    }
+}
+
+@media (max-width: 991px) {
+    .uno {
+        @include size(350px , 420px);
+    }
+    .dos {
+        @include size(350px , 370px);
+    }
+    .tres {
+        @include size(350px , 410px);
+    }
+    .cuatro {
+        @include size(350px , 490px);
+    }
+}
+
+@media (max-width: 767px) {
+    .uno {
+        @include size(250px , 650px);
+    }
+    .dos {
+        @include size(250px , 590px);
+    }
+    .tres {
+        @include size(250px , 600px);
+    }
+    .cuatro {
+        @include size(250px , 710px);
+    }
+}
+
+
 .marcas-centrado {
     @include centrado(flex , center);
 }
