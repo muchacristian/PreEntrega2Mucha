@@ -1,6 +1,21 @@
 @import "_mixin.scss";
 @import "_variables.scss";
 
+/* Aca esta el responsive para el h1 del html marcas.*/ 
+
+@media (max-width: 381px) {
+    .borde {
+    font-size: 20px;
+    }
+}
+
+@media (max-width: 307px) {
+    .borde {
+        font-size: 12px;
+    }
+}
+
+/* Aca esta el responsive de las cards */ 
 @media(max-width: 1199px) {
     .uno {
         @include size(400px , 380px);
@@ -46,7 +61,15 @@
     }
 }
 
+@media (max-width: 575px) {
+    .card-contenedor {
+        display: flex;
+        justify-content: center;
+    }
+}
 
+
+/* Aca use este mixin para centrar las imagenes dentro de las cards, por que me gustaba como quedaban centradas */
 .marcas-centrado {
     @include centrado(flex , center);
 }

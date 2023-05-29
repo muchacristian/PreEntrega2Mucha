@@ -60,10 +60,10 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="contacto-cont">
         <div class="container my-4">
-          <form class="formulario-contenedor">
-            <div class="texto-contacto">
+          <div class="row">
+            <div class="col texto-contacto text-center">
               <h1 class="h1">CONTACTATE CON NOSOTROS</h1>
               <p>
                 Tomamos cada mensaje como prioritario, <br />la respuesta puede
@@ -72,53 +72,61 @@
               </p>
               <h4>Musicalmente Vivo</h4>
             </div>
-            <div class="formulario-contacto bg-dark">
-              <label for="text" class="form-label mt-4 mb-2">Nombre</label>
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                placeholder="Escribe tu Nombre"
-              />
-              <label for="emailinput" class="form-label mt-4 mb-2">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="emailinput"
-                placeholder="Ingrese su correo"
-              />
-              <label for="telefonoinput" class="form-label mt-4 mb-2"
-                >Telefono</label
-              >
-              <input
-                type="number"
-                class="form-control"
-                id="telefonoinput"
-                placeholder="Ingrese su numero"
-              />
-              <label for="mensaje" class="form-label mt-4 mb-2"
-                >Deje su mensaje</label
-              >
-              <textarea
-                class="form-control"
-                name="mensaje"
-                id="mensaje"
-                cols="20"
-                rows="10"
-                placeholder="Escriba su mensaje aqui"
-              ></textarea>
-              <button type="button" class="btn btn-primary mt-4">
-                Enviar Mensaje
-              </button>
+          </div>
+          <div class="row">
+            <div class="col">
+              <form class="formulario-contenedor">
+                <div class="formulario-contacto bg-dark">
+                  <label for="text" class="form-label mt-4 mb-2">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    placeholder="Escribe tu Nombre"
+                  />
+                  <label for="emailinput" class="form-label mt-4 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailinput"
+                    placeholder="Ingrese su correo"
+                  />
+                  <label for="telefonoinput" class="form-label mt-4 mb-2"
+                    >Telefono</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="telefonoinput"
+                    placeholder="Ingrese su numero"
+                  />
+                  <label for="mensaje" class="form-label mt-4 mb-2"
+                    >Deje su mensaje</label
+                  >
+                  <textarea
+                    class="form-control"
+                    name="mensaje"
+                    id="mensaje"
+                    cols="20"
+                    rows="10"
+                    placeholder="Escriba su mensaje aqui"
+                  ></textarea>
+                  <button type="button" class="btn btn-primary mt-4">
+                    Enviar Mensaje
+                  </button>
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
       </section>
       <!-- Footer -->
       <footer class="bg-dark text-light pt-5 pb-4">
         <div class="container">
           <div class="row">
-            <div class="col mt-3">
+            <div class="col-sm-12 col-md-6 mt-3">
               <h5 class="text-uppercase mb-4 font-weight-bold text-primary">
                 CONTACTO
               </h5>
@@ -146,7 +154,7 @@
                 +549 0223-6821945
               </p>
             </div>
-            <div class="col text-end mt-3">
+            <div class="col-sm-12 col-md-6 text-end mt-3">
               <h5 class="text-uppercase mb-4 font-weight-bold text-primary">
                 NUESTRAS REDES
               </h5>

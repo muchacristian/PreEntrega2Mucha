@@ -2,6 +2,14 @@
 @import "_mixin.scss";
 @import "_extends.scss";
 
+/* Aca se encuentra el responsive del html nosotros, el texto se centra al achicarse la pantalla */
+@media (max-width: 767px) {
+  .nosotros {
+    text-align: center;
+  }
+}
+
+/* Aca esta la animacion del h2 del html de nosotros*/
 @keyframes texto_nosotros {
   0%, 10% {
     opacity: 0;

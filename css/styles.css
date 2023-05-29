@@ -113,6 +113,18 @@ footer i:hover {
   border-top: solid 0.3rem rgb(60, 60, 190);
 }
 
+/* Aca esta el responsive para el h1 del html marcas.*/
+@media (max-width: 381px) {
+  .borde {
+    font-size: 20px;
+  }
+}
+@media (max-width: 307px) {
+  .borde {
+    font-size: 12px;
+  }
+}
+/* Aca esta el responsive de las cards */
 @media (max-width: 1199px) {
   .uno {
     width: 400px;
@@ -167,6 +179,13 @@ footer i:hover {
     height: 710px;
   }
 }
+@media (max-width: 575px) {
+  .card-contenedor {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Aca use este mixin para centrar las imagenes dentro de las cards, por que me gustaba como quedaban centradas */
 .marcas-centrado {
   display: flex;
   align-items: center;
@@ -182,6 +201,13 @@ footer i:hover {
   border-top: solid 0.3rem rgb(60, 60, 190);
 }
 
+/* Aca se encuentra el responsive del html nosotros, el texto se centra al achicarse la pantalla */
+@media (max-width: 767px) {
+  .nosotros {
+    text-align: center;
+  }
+}
+/* Aca esta la animacion del h2 del html de nosotros*/
 @keyframes texto_nosotros {
   0%, 10% {
     opacity: 0;
@@ -219,15 +245,11 @@ footer i:hover {
 .formulario-contenedor {
   display: grid;
   grid-template-rows: 100px 100px 200px 200px 100px 100px;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.formulario-contenedor .texto-contacto {
-  grid-column: 1/3;
-  grid-row: 3/5;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .formulario-contenedor .formulario-contacto {
   grid-row: 2/7;
-  grid-column: 3/5;
+  grid-column: 2/6;
   border: solid 0.05rem rgb(66, 66, 66);
   padding: 20px;
   border-radius: 10px;
