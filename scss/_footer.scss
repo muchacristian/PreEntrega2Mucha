@@ -1,6 +1,8 @@
 @import "_variables.scss";
 @import "_mixin.scss";
 
+/* Los estilos del footer solo son cambio de tamaño, un hover para los iconos de las redes sociales,
+y un responsive  */
 footer {
     i {
         @media (max-width: 480px) {

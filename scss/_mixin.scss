@@ -1,25 +1,31 @@
+
+/* Mixin para cambios de tamaños */
 @mixin size($ancho , $alto) {
     width: $ancho;
     height: $alto;
 }
 
+/* En este podremos cambiar color y tamaño de elementos*/
 @mixin color-tamaño($color , $tamaño) { 
     color: $color;
     font-size: $tamaño;
 }
 
+/* Mixin para que los bordes sean tanto para elementos en bloque como en linea*/
 @mixin bordes($bloque , $relleno , $padding) {
     display: $bloque;
     font-weight: $relleno;
     padding: $padding;
 }
 
+/* Este mixin sirve para centrar */
 @mixin secciones-tienda($top , $bottom) {
     margin-top: $top;
     margin-bottom: $bottom;
 
 }
 
+/* Aqui tambien lo use para centrar */
 @mixin centrado($flex , $posittion) {
     display: $flex;
     align-items: $posittion;

@@ -2,6 +2,7 @@
 @import "_mixin.scss";
 @import "_extends.scss";
 
+/* Este es el borde del h1 del html "tienda", es solo para que resalte de los demas */
 .borde-contenedor {
   margin: 30px;
   .borde {
@@ -10,6 +11,7 @@
   }
 }
 
+/* Estos estilos son para los textos de cada seccion, con un hover, la idea era darle animacion tambien, pero no logre el efecto de movimiento */
 .borde-secciones {
   @include secciones-tienda(20px , 20px);
   &:hover {

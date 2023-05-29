@@ -1,14 +1,18 @@
 @import "_variables.scss";
 @import "_mixin.scss";
 
+/* En los estilos del header podemos encontrar, color de fondo igual al del index */
 header {
   background-color: $color-fondo;
   background-image: $gradiante-fondo;
   nav {
+    /* Cambio de tamaño del logo, y un border*radius para que que sea circular */
     img {
       @include size(75px, 75px);
       border-radius: 50%;
     }
+    /* Aqui encontramos una animacion para cada enlace, usando positio, y bloqueando el flex se pudo lograr el efecto.
+    El before y el after los aprendi de un video de youtube */
     .navbar-nav {
       transform: translate(0%, 0%);
 

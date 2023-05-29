@@ -1,10 +1,12 @@
 @import "_variables.scss";
 
+/* Use este extend por que no podia usar un mixin, me parecio mejor esta opcion para la utilidad que le quise dar en el html de tienda */
 %borde {
     border-top: solid 0.2rem $black;
     border-bottom: solid 0.2rem $black;
 }
 
+/* Al igual que el anterior, me fue mas practico usar extend aqui, en los encabezados de la tienda*/
 %secciones {
     display: inline;
     border-top: solid 0.3rem $blue;
