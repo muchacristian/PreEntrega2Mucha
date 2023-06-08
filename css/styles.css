@@ -301,15 +301,17 @@ footer i:hover {
   .contacto .formulario-card > * {
     padding: 2em;
   }
-  .contacto .formulario-card .contacto-text h4, .contacto .formulario-card p {
+  .contacto .formulario-card .contacto-text h4,
+  .contacto .formulario-card p {
     padding: 1em;
     text-align: left;
   }
 }
 /* Formulario de contacto, echo con grid,  */
 .body-contacto {
+  background-color: #11115a;
+  background-image: linear-gradient(90deg, #11115a 0%, #6af2ff 55%, #11115a 100%);
   box-sizing: border-box;
-  background: #181818;
   color: #fff;
   font-family: "Quicksand", sans-serif;
 }
@@ -323,6 +325,8 @@ footer i:hover {
   margin-right: auto;
 }
 .body-contacto .contacto .content .contacto-titulo {
+  font-weight: bold;
+  color: #000;
   margin-top: 2em;
   margin-bottom: 2em;
   text-align: center;
@@ -339,7 +343,8 @@ footer i:hover {
   padding: 1em;
 }
 .body-contacto .contacto .content .formulario-card .formulario-contacto {
-  background: #222222;
+  background-color: #0e020c;
+  background-image: linear-gradient(0deg, #0e020c 0%, #342dc1 50%, #0e020c 100%);
 }
 .body-contacto .contacto .content .formulario-card .formulario-contacto form {
   display: grid;
@@ -369,8 +374,10 @@ footer i:hover {
   text-transform: uppercase;
   padding: 1em;
   color: #000;
+  font-weight: bold;
 }
-.body-contacto .contacto .content .formulario-card .formulario-contacto form button:hover, .body-contacto .contacto .content .formulario-card .formulario-contacto form button :focus {
+.body-contacto .contacto .content .formulario-card .formulario-contacto form button:hover,
+.body-contacto .contacto .content .formulario-card .formulario-contacto form button :focus {
   background: #d63031;
   color: #fff;
   transition: background-color 1s ease-out;
@@ -379,7 +386,8 @@ footer i:hover {
 .body-contacto .contacto .content .formulario-card .contacto-texto {
   background: #000;
 }
-.body-contacto .contacto .content .formulario-card .contacto-texto h4, .body-contacto .contacto .content .formulario-card .contacto-texto p {
+.body-contacto .contacto .content .formulario-card .contacto-texto h4,
+.body-contacto .contacto .content .formulario-card .contacto-texto p {
   text-align: center;
   margin: 0 0 1rem 0;
 }
