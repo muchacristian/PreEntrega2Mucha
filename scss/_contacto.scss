@@ -22,6 +22,24 @@
     }
   }
 }
+/* Responsive para mobiles del formulario*/
+@media (max-width: 462px) {
+  .contacto {
+    .formulario-contacto {
+      h3 {
+        text-align: center;
+      }
+     form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      p {
+        grid-column: 1 / 3;
+      }
+     }
+    }
+  }
+}
 
 /* Formulario de contacto, echo con grid,  */
 

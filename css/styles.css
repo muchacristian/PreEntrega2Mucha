@@ -307,6 +307,19 @@ footer i:hover {
     text-align: left;
   }
 }
+/* Responsive para mobiles del formulario*/
+@media (max-width: 462px) {
+  .contacto .formulario-contacto h3 {
+    text-align: center;
+  }
+  .contacto .formulario-contacto form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contacto .formulario-contacto form p {
+    grid-column: 1/3;
+  }
+}
 /* Formulario de contacto, echo con grid,  */
 .body-contacto {
   background-color: #11115a;
