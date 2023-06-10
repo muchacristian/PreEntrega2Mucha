@@ -11,15 +11,18 @@
 
 /* Aca esta la animacion del h2 del html de nosotros*/
 @keyframes texto_nosotros {
-  0%, 10% {
+  0%,
+  10% {
     opacity: 0;
   }
-  10%, 100% {
+  10%,
+  100% {
     color: $blanco;
     text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px lime;
   }
-  10%, 90% {
-    color: #111;
+  10%,
+  90% {
+    color: $black;
     text-shadow: none;
   }
 }
@@ -34,17 +37,23 @@
 }
 
 .nosotros-contenedor {
-  
-  h2 {
+  .nosotros-titulo {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    color: $rojo;
 
-    animation-name: texto_nosotros; 
+    span {
+      color: $negro;
+    }
+  }
+  h2 {
+    animation-name: texto_nosotros;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-duration: 2s;
   }
 
   .nosotros-texto {
-
     animation-name: subtexto;
     animation-iteration-count: initial;
     animation-timing-function: ease-in;

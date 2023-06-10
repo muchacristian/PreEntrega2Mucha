@@ -105,29 +105,39 @@ footer i:hover {
 /* Este mixin sirve para centrar */
 /* Aqui tambien lo use para centrar */
 /* Use este extend por que no podia usar un mixin, me parecio mejor esta opcion para la utilidad que le quise dar en el html de tienda */
-.borde-contenedor .borde {
+.tienda-contenedor .tienda-titulo .borde {
   border-top: solid 0.2rem black;
   border-bottom: solid 0.2rem black;
 }
 
 /* Al igual que el anterior, me fue mas practico usar extend aqui, en los encabezados de la tienda*/
-.borde-secciones:hover {
+.tienda-contenedor .borde-secciones:hover {
   display: inline;
   border-top: solid 0.3rem rgb(60, 60, 190);
 }
 
-/* Este es el borde del h1 del html "tienda", es solo para que resalte de los demas */
-.borde-contenedor {
-  margin: 30px;
+.tienda-contenedor {
+  /* Estos estilos son para los textos de cada seccion, con un hover, la idea era darle animacion tambien, pero no logre el efecto de movimiento */
 }
-.borde-contenedor .borde {
+.tienda-contenedor .tienda-titulo {
+  margin: 100px 30px 50px 30px;
+  /* Aca encontramos el borde del titulo */
+}
+.tienda-contenedor .tienda-titulo .borde {
   display: inline;
   font-weight: bold;
   padding: 1rem;
+  color: #b70e21;
 }
-
-/* Estos estilos son para los textos de cada seccion, con un hover, la idea era darle animacion tambien, pero no logre el efecto de movimiento */
-.borde-secciones {
+.tienda-contenedor .tienda-titulo .borde span {
+  color: #000;
+}
+.tienda-contenedor .texto-tienda {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+.tienda-contenedor .borde-secciones {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -137,13 +147,13 @@ footer i:hover {
 /* Este mixin sirve para centrar */
 /* Aqui tambien lo use para centrar */
 /* Use este extend por que no podia usar un mixin, me parecio mejor esta opcion para la utilidad que le quise dar en el html de tienda */
-.borde-contenedor .borde {
+.tienda-contenedor .tienda-titulo .borde {
   border-top: solid 0.2rem black;
   border-bottom: solid 0.2rem black;
 }
 
 /* Al igual que el anterior, me fue mas practico usar extend aqui, en los encabezados de la tienda*/
-.borde-secciones:hover {
+.tienda-contenedor .borde-secciones:hover {
   display: inline;
   border-top: solid 0.3rem rgb(60, 60, 190);
 }
@@ -225,6 +235,14 @@ footer i:hover {
     justify-content: center;
   }
 }
+.b-marcas {
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+}
+.b-marcas span {
+  color: #b70e21;
+}
+
 /* Aca use este mixin para centrar las imagenes dentro de las cards, por que me gustaba como quedaban centradas */
 .marcas-centrado {
   display: flex;
@@ -237,13 +255,13 @@ footer i:hover {
 /* Este mixin sirve para centrar */
 /* Aqui tambien lo use para centrar */
 /* Use este extend por que no podia usar un mixin, me parecio mejor esta opcion para la utilidad que le quise dar en el html de tienda */
-.borde-contenedor .borde {
+.tienda-contenedor .tienda-titulo .borde {
   border-top: solid 0.2rem black;
   border-bottom: solid 0.2rem black;
 }
 
 /* Al igual que el anterior, me fue mas practico usar extend aqui, en los encabezados de la tienda*/
-.borde-secciones:hover {
+.tienda-contenedor .borde-secciones:hover {
   display: inline;
   border-top: solid 0.3rem rgb(60, 60, 190);
 }
@@ -264,7 +282,7 @@ footer i:hover {
     text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px lime;
   }
   10%, 90% {
-    color: #111;
+    color: black;
     text-shadow: none;
   }
 }
@@ -275,6 +293,14 @@ footer i:hover {
   100% {
     opacity: 1;
   }
+}
+.nosotros-contenedor .nosotros-titulo {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  color: #b70e21;
+}
+.nosotros-contenedor .nosotros-titulo span {
+  color: #000;
 }
 .nosotros-contenedor h2 {
   animation-name: texto_nosotros;
@@ -410,26 +436,32 @@ footer i:hover {
   background-color: #11115a;
   background-image: linear-gradient(90deg, #11115a 0%, #6af2ff 55%, #11115a 100%);
 }
-.body .container .card {
+.body .container-index h1 {
+  color: #b70e21;
+}
+.body .container-index h1 span {
+  color: #000;
+}
+.body .container-index .card {
   /* Aca esta la media query para responsive de las cards y el carrousel */
 }
 @media (max-width: 480px) {
-  .body .container .card .card-title {
+  .body .container-index .card .card-title {
     font-size: 17px;
   }
 }
 @media (max-width: 320px) {
-  .body .container .card .card-title {
+  .body .container-index .card .card-title {
     font-size: 12px;
   }
 }
 @media (max-width: 480px) {
-  .body .container .card .card-text {
+  .body .container-index .card .card-text {
     font-size: 12px;
   }
 }
 @media (max-width: 320px) {
-  .body .container .card .card-text {
+  .body .container-index .card .card-text {
     font-size: 10px;
   }
 }
