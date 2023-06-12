@@ -14,11 +14,15 @@
   background-image: $gradiante-fondo;
 
   .container-index {
-    h1 {
-      color: $rojo;
+    .text-center {
+      @include secciones-tienda(2em , none);
 
-      span {
-        color: $negro;
+      h1 {
+        color: $rojo;
+
+        span {
+          color: $negro;
+        }
       }
     }
     .card {

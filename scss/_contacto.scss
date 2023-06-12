@@ -1,4 +1,5 @@
 @import "_variables.scss";
+@import "_mixin.scss";
 
 /* Responsive para pantallas grandes*/
 
@@ -47,7 +48,7 @@
   background-color: $color-fondo;
   background-image: $gradiante-fondo;
   box-sizing: border-box;
-  color: #fff;
+  color: $offwhite;
   font-family: "Quicksand", sans-serif;
 
   .contacto {
@@ -59,34 +60,26 @@
       margin-right: auto;
 
       .contacto-titulo {
-        font-weight: bold;
-        color: #000;
-        margin-top: 2em;
-        margin-bottom: 2em;
-        text-align: center;
+        @include color-peso-al($negro , bold , center);
+        @include secciones-tienda(2em , 2em);
         font-size: 3em;
 
         span {
-          color: #b70e21;
+          color: $rojo;
         }
       }
 
       .formulario-card {
         margin-bottom: 4em;
-        box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 20px 0 $gris;
 
         & > * {
           padding: 1em;
         }
 
         .formulario-contacto {
-          background-color: #0e020c;
-          background-image: linear-gradient(
-            0deg,
-            #0e020c 0%,
-            #342dc1 50%,
-            #0e020c 100%
-          );
+          background-color: $color-form;
+          background-image: $gradiant-form;
 
           form {
             display: grid;
@@ -109,22 +102,22 @@
               border: none;
               background: none;
               outline: none;
-              color: #fff;
-              border-bottom: 1px solid #d63031;
+              color: $offwhite;
+              border-bottom: 1px solid $rojiso;
             }
 
             button {
-              background: #b70e21;
+              background: $rojo;
               border: 0;
               text-transform: uppercase;
               padding: 1em;
-              color: #000;
+              color: $negro;
               font-weight: bold;
 
               &:hover,
               :focus {
-                background: #d63031;
-                color: #fff;
+                background: $rojiso;
+                color: $offwhite;
                 transition: background-color 1s ease-out;
                 outline: 0;
               }
@@ -133,7 +126,7 @@
         }
 
         .contacto-texto {
-          background: #000;
+          background: $negro;
 
           h4,
           p {

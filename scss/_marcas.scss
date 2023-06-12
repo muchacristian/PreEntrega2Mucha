@@ -1,5 +1,6 @@
 @import "_mixin.scss";
 @import "_variables.scss";
+@import "_extends.scss";
 
 /* Aca esta el responsive para el h1 del html marcas.*/
 
@@ -68,14 +69,17 @@
   }
 }
 
-.b-marcas {
-  font-family: "Quicksand", sans-serif;
-  color: $negro;
+  .b-marcas {
+    @include secciones-tienda(2em , 2em);
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+    color: $negro;
 
-  span {
-    color: $rojo;
+    span {
+      color: $rojo;
+    }
   }
-}
+
 /* Aca use este mixin para centrar las imagenes dentro de las cards, por que me gustaba como quedaban centradas */
 .marcas-centrado {
   @include centrado(flex, center);

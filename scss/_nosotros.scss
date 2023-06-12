@@ -18,7 +18,7 @@
   10%,
   100% {
     color: $blanco;
-    text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px lime;
+    text-shadow: 0 0 12px $lima, 0 0 50px $lima, 0 0 100px $lima;
   }
   10%,
   90% {
@@ -38,9 +38,9 @@
 
 .nosotros-contenedor {
   .nosotros-titulo {
+    @include secciones-tienda(1em , 1em);
+    @include color-peso-al($rojo , bold , center);
     font-family: "Quicksand", sans-serif;
-    text-align: center;
-    color: $rojo;
 
     span {
       color: $negro;

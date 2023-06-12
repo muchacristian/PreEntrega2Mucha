@@ -4,6 +4,8 @@
 /* Mixin para que los bordes sean tanto para elementos en bloque como en linea*/
 /* Este mixin sirve para centrar */
 /* Aqui tambien lo use para centrar */
+/* Mixin para alineacion y tamaño*/
+/* Mixin para color, peso y alineacon */
 /* En los estilos del header podemos encontrar, color de fondo igual al del index */
 header {
   background-color: #11115a;
@@ -82,6 +84,8 @@ header nav .navbar-nav .nav-item .nav-link:hover:after {
 /* Mixin para que los bordes sean tanto para elementos en bloque como en linea*/
 /* Este mixin sirve para centrar */
 /* Aqui tambien lo use para centrar */
+/* Mixin para alineacion y tamaño*/
+/* Mixin para color, peso y alineacon */
 /* Los estilos del footer solo son cambio de tamaño, un hover para los iconos de las redes sociales,
 y un responsive  */
 footer i {
@@ -95,7 +99,7 @@ footer i {
   }
 }
 footer i:hover {
-  color: rgb(60, 60, 190);
+  color: #b70e21;
   font-size: 2.8rem;
 }
 
@@ -104,6 +108,8 @@ footer i:hover {
 /* Mixin para que los bordes sean tanto para elementos en bloque como en linea*/
 /* Este mixin sirve para centrar */
 /* Aqui tambien lo use para centrar */
+/* Mixin para alineacion y tamaño*/
+/* Mixin para color, peso y alineacon */
 /* Use este extend por que no podia usar un mixin, me parecio mejor esta opcion para la utilidad que le quise dar en el html de tienda */
 .tienda-contenedor .tienda-titulo .borde {
   border-top: solid 0.2rem black;
@@ -127,6 +133,7 @@ footer i:hover {
   display: inline;
   font-weight: bold;
   padding: 1rem;
+  font-family: "Quicksand", sans-serif;
   color: #b70e21;
 }
 .tienda-contenedor .tienda-titulo .borde span {
@@ -146,6 +153,8 @@ footer i:hover {
 /* Mixin para que los bordes sean tanto para elementos en bloque como en linea*/
 /* Este mixin sirve para centrar */
 /* Aqui tambien lo use para centrar */
+/* Mixin para alineacion y tamaño*/
+/* Mixin para color, peso y alineacon */
 /* Use este extend por que no podia usar un mixin, me parecio mejor esta opcion para la utilidad que le quise dar en el html de tienda */
 .tienda-contenedor .tienda-titulo .borde {
   border-top: solid 0.2rem black;
@@ -163,6 +172,20 @@ footer i:hover {
 /* Mixin para que los bordes sean tanto para elementos en bloque como en linea*/
 /* Este mixin sirve para centrar */
 /* Aqui tambien lo use para centrar */
+/* Mixin para alineacion y tamaño*/
+/* Mixin para color, peso y alineacon */
+/* Use este extend por que no podia usar un mixin, me parecio mejor esta opcion para la utilidad que le quise dar en el html de tienda */
+.tienda-contenedor .tienda-titulo .borde {
+  border-top: solid 0.2rem black;
+  border-bottom: solid 0.2rem black;
+}
+
+/* Al igual que el anterior, me fue mas practico usar extend aqui, en los encabezados de la tienda*/
+.tienda-contenedor .borde-secciones:hover {
+  display: inline;
+  border-top: solid 0.3rem rgb(60, 60, 190);
+}
+
 /* Aca esta el responsive para el h1 del html marcas.*/
 @media (max-width: 381px) {
   .borde {
@@ -236,6 +259,9 @@ footer i:hover {
   }
 }
 .b-marcas {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-weight: bold;
   font-family: "Quicksand", sans-serif;
   color: #000;
 }
@@ -254,6 +280,8 @@ footer i:hover {
 /* Mixin para que los bordes sean tanto para elementos en bloque como en linea*/
 /* Este mixin sirve para centrar */
 /* Aqui tambien lo use para centrar */
+/* Mixin para alineacion y tamaño*/
+/* Mixin para color, peso y alineacon */
 /* Use este extend por que no podia usar un mixin, me parecio mejor esta opcion para la utilidad que le quise dar en el html de tienda */
 .tienda-contenedor .tienda-titulo .borde {
   border-top: solid 0.2rem black;
@@ -295,9 +323,12 @@ footer i:hover {
   }
 }
 .nosotros-contenedor .nosotros-titulo {
-  font-family: "Quicksand", sans-serif;
-  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
   color: #b70e21;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
 }
 .nosotros-contenedor .nosotros-titulo span {
   color: #000;
@@ -315,6 +346,13 @@ footer i:hover {
   animation-duration: 2s;
 }
 
+/* Mixin para cambios de tamaños */
+/* En este podremos cambiar color y tamaño de elementos*/
+/* Mixin para que los bordes sean tanto para elementos en bloque como en linea*/
+/* Este mixin sirve para centrar */
+/* Aqui tambien lo use para centrar */
+/* Mixin para alineacion y tamaño*/
+/* Mixin para color, peso y alineacon */
 /* Responsive para pantallas grandes*/
 @media (min-width: 700px) {
   .contacto {
@@ -364,11 +402,11 @@ footer i:hover {
   margin-right: auto;
 }
 .body-contacto .contacto .content .contacto-titulo {
-  font-weight: bold;
   color: #000;
+  font-weight: bold;
+  text-align: center;
   margin-top: 2em;
   margin-bottom: 2em;
-  text-align: center;
   font-size: 3em;
 }
 .body-contacto .contacto .content .contacto-titulo span {
@@ -436,10 +474,14 @@ footer i:hover {
   background-color: #11115a;
   background-image: linear-gradient(90deg, #11115a 0%, #6af2ff 55%, #11115a 100%);
 }
-.body .container-index h1 {
+.body .container-index .text-center {
+  margin-top: 2em;
+  margin-bottom: none;
+}
+.body .container-index .text-center h1 {
   color: #b70e21;
 }
-.body .container-index h1 span {
+.body .container-index .text-center h1 span {
   color: #000;
 }
 .body .container-index .card {

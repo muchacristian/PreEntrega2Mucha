@@ -6,9 +6,9 @@
 }
 
 /* En este podremos cambiar color y tamaño de elementos*/
-@mixin color-tamaño($color , $tamaño) { 
+@mixin color-tamanio($color , $tamanio) { 
     color: $color;
-    font-size: $tamaño;
+    font-size: $tamanio;
 }
 
 /* Mixin para que los bordes sean tanto para elementos en bloque como en linea*/
@@ -29,4 +29,17 @@
 @mixin centrado($flex , $posittion) {
     display: $flex;
     align-items: $posittion;
+}
+
+/* Mixin para alineacion y tamaño*/
+@mixin alineacion-tam ($alineacion , $tam) {
+    text-align: $alineacion;
+    font-size: $tam;
+}
+
+/* Mixin para color, peso y alineacon */
+@mixin color-peso-al ($col , $peso , $al) {
+    color: $col;
+    font-weight: $peso;
+    text-align: $al;
 }

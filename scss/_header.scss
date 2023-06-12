@@ -26,7 +26,7 @@ header {
           margin: 20px 0;
           padding: 10px 20px;
           text-decoration: none;
-          color: #262626;
+          color: $gris-oscuro;
           font-family: sans-serif;
           font-size: 18px;
           font-weight: 600;
@@ -39,8 +39,8 @@ header {
             left: 0;
             width: 100%;
             height: 100%;
-            border-top: 2px solid #262626;
-            border-bottom: 2px solid #262626;
+            border-top: 2px solid $gris-oscuro;
+            border-bottom: 2px solid $gris-oscuro;
             transform: scaleY(2);
             opacity: 0;
             transition: 0.3s;
@@ -52,14 +52,14 @@ header {
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #262626;
+            background-color: $gris-oscuro;
             transform: scale(0);
             opacity: 0;
             transition: 0.3s;
             z-index: -1;
           }
           &:hover {
-            color: #fff;
+            color: $offwhite;
             &:before {
               transform: scaleY(1);
               opacity: 1;
