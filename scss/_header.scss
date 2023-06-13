@@ -8,7 +8,7 @@ header {
   nav {
     /* Cambio de tamaño del logo, y un border*radius para que que sea circular */
     img {
-      @include size(75px, 75px);
+      @include size(75px , 75px);
       border-radius: 50%;
     }
     /* Aqui encontramos una animacion para cada enlace, usando positio, y bloqueando el flex se pudo lograr el efecto.
